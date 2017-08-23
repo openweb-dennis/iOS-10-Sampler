@@ -85,7 +85,7 @@
 
 - (CXProvider*)provider {
     if (!_provider) {
-        CXProviderConfiguration *configuration = [[CXProviderConfiguration alloc] initWithLocalizedName:@"CallKit"];
+        CXProviderConfiguration *configuration = [[CXProviderConfiguration alloc] initWithLocalizedName:@"Reception Mirror"];
         configuration.supportsVideo = YES;
         configuration.maximumCallsPerCallGroup = 1;
         configuration.supportedHandleTypes = [NSSet setWithObject:@(CXHandleTypePhoneNumber)];
